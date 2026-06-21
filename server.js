@@ -11,7 +11,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb' }));
 
 // API Key from environment
-const GEMINI_API_KEY = 'AQ.Ab8RN6LqDm4b_5V7Tk-QmJxnKmu7OPyv-J8isAZowROHdyX7NQ';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent';
 
 // Health check endpoint
